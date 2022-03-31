@@ -18,14 +18,43 @@ class LoginPage extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 450,
-              decoration: BoxDecoration(color: Colors.white, boxShadow: [
-                new BoxShadow(
-                  color: Colors.black12,
-                  offset: new Offset(3, 2.0),
-                  blurRadius: 5,
-                  spreadRadius: 1,
-                )
-              ]),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black12,
+                    offset: new Offset(3, 2.0),
+                    blurRadius: 5,
+                    spreadRadius: 1,
+                  )
+                ],
+              ),
+              child: ListView(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text(
+                            "Welcome",
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Text("Sign in to continue"),
+                        ],
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("Sign Up"),
+                      )
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
