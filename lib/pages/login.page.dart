@@ -55,6 +55,9 @@ class LoginPage extends StatelessWidget {
                           )
                         ],
                       ),
+                      SizedBox(
+                        height: 60,
+                      ),
                       TextFormField(
                         autofocus: true,
                         keyboardType: TextInputType.emailAddress,
@@ -68,6 +71,9 @@ class LoginPage extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 20,
                         ),
+                      ),
+                      SizedBox(
+                        height: 10,
                       ),
                       TextFormField(
                         autofocus: true,
@@ -83,7 +89,19 @@ class LoginPage extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 20,
                         ),
-                      )
+                      ),
+                      Container(
+                        color: Colors.yellow,
+                        height: 40,
+                        alignment: Alignment.centerRight,
+                        child: TextButton(
+                          onPressed: () {},
+                          child: Text("Forgot your password?"),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 60,
+                      ),
                     ],
                   ),
                 ))
