@@ -136,7 +136,64 @@ class LoginPage extends StatelessWidget {
                   fontWeight: FontWeight.w300,
                 ),
               ),
-            )
+            ),
+            Container(
+              width: double.infinity,
+              height: 60,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  width: 2.0,
+                  color: Colors.blue,
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
+                ),
+              ),
+              child: TextButton(
+                child: Row(children: [
+                  Container(
+                    height: 24,
+                    width: 100,
+                    child: Image.asset(
+                      "assets/facebook.png",
+                      width: 24,
+                    ),
+                  ),
+                  Text('Sign in with Facebook'),
+                ]),
+                onPressed: () {},
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: double.infinity,
+              height: 60,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  width: 2.0,
+                  color: Colors.blue,
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
+                ),
+              ),
+              child: TextButton(
+                child: Row(children: [
+                  Container(
+                    height: 24,
+                    width: 100,
+                    child: Image.asset(
+                      "assets/google.png",
+                      width: 24,
+                    ),
+                  ),
+                  Text('Sign in with Google'),
+                ]),
+                onPressed: () {},
+              ),
+            ),
           ],
         ),
       ),
