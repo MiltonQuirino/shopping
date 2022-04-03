@@ -155,22 +155,22 @@ Widget productList(BuildContext context) {
     child: ListView(
       scrollDirection: Axis.horizontal,
       children: <Widget>[
-        productItem(context),
-        productItem(context),
-        productItem(context),
-        productItem(context),
-        productItem(context),
-        productItem(context),
-        productItem(context),
-        productItem(context),
-        productItem(context),
-        productItem(context),
+        productItem(context, "Produto 1"),
+        productItem(context, "Produto 2"),
+        productItem(context, "Produto 3"),
+        productItem(context, "Produto 4"),
+        productItem(context, "Produto 5"),
+        productItem(context, "Produto 6"),
+        productItem(context, "Produto 7"),
+        productItem(context, "Produto 8"),
+        productItem(context, "Produto 9"),
+        productItem(context, "Produto 10"),
       ],
     ),
   );
 }
 
-Widget productItem(BuildContext context) {
+Widget productItem(BuildContext context, String description) {
   return Container(
     padding: EdgeInsets.all(10),
     margin: EdgeInsets.all(5),
@@ -201,7 +201,7 @@ Widget productItem(BuildContext context) {
         Container(
           height: 60,
           child: Text(
-            "Titulo do produto",
+            description,
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w300,
