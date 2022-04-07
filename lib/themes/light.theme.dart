@@ -8,7 +8,7 @@ const backgroundColor = const Color(0xFFF5F5F5);
 ThemeData lightTheme() {
   return ThemeData(
     colorScheme: ColorScheme.fromSwatch(
-      primarySwatch: Colors.blue,
+      primarySwatch: Colors.green,
       brightness: brightness,
     ).copyWith(
       secondary: Colors.white,
