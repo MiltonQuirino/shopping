@@ -12,7 +12,7 @@ class SignupPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: Colors.white10,
+          // color: Colors.white10,
           padding: EdgeInsets.only(
             top: 80,
             left: 20,
@@ -45,10 +45,7 @@ class SignupPage extends StatelessWidget {
                       Text(
                         "Signup",
                         textAlign: TextAlign.left,
-                        style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.w500,
-                        ),
+                        style: Theme.of(context).textTheme.displaySmall,
                       ),
                       SizedBox(
                         height: 10,
@@ -59,13 +56,13 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Name",
                           labelStyle: TextStyle(
-                              color: Theme.of(context).primaryColor,
+                              color: Theme.of(context).colorScheme.primary,
                               fontWeight: FontWeight.w400,
                               fontSize: 16),
                         ),
                         style: TextStyle(
-                          fontSize: 20,
-                        ),
+                            fontSize: 20,
+                            color: Theme.of(context).colorScheme.primary),
                       ),
                       SizedBox(
                         height: 10,
@@ -76,12 +73,13 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Emai",
                           labelStyle: TextStyle(
-                              color: Theme.of(context).primaryColor,
+                              color: Theme.of(context).colorScheme.primary,
                               fontWeight: FontWeight.w400,
                               fontSize: 16),
                         ),
                         style: TextStyle(
                           fontSize: 20,
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                       ),
                       SizedBox(
@@ -94,13 +92,13 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Password",
                           labelStyle: TextStyle(
-                              color: Theme.of(context).primaryColor,
+                              color: Theme.of(context).colorScheme.primary,
                               fontWeight: FontWeight.w400,
                               fontSize: 16),
                         ),
                         style: TextStyle(
-                          fontSize: 20,
-                        ),
+                            fontSize: 20,
+                            color: Theme.of(context).colorScheme.primary),
                       ),
                       SizedBox(
                         height: 60,
@@ -108,7 +106,7 @@ class SignupPage extends StatelessWidget {
                       Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.all(
                             Radius.circular(30),
                           ),

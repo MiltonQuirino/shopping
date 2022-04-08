@@ -18,7 +18,7 @@ class CartPage extends StatelessWidget {
           ),
           Container(
             height: 80,
-            color: Colors.black12,
+            // color: Colors.black12,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -39,7 +39,7 @@ class CartPage extends StatelessWidget {
                       Text(
                         "\$875",
                         style: TextStyle(
-                            color: Theme.of(context).primaryColor,
+                            color: Theme.of(context).colorScheme.primary,
                             fontWeight: FontWeight.bold,
                             fontSize: 20),
                       ),

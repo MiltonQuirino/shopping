@@ -31,7 +31,7 @@ class CartItem extends StatelessWidget {
                 Text(
                   "\$200",
                   style: TextStyle(
-                      color: Theme.of(context).primaryColor,
+                      color: Theme.of(context).colorScheme.primary,
                       fontWeight: FontWeight.bold,
                       fontSize: 20),
                 ),

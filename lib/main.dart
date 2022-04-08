@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopping/pages/cart.page.dart';
 import 'package:shopping/pages/login.page.dart';
 import 'package:shopping/pages/tabs.page.dart';
+import 'package:shopping/themes/dark.theme.dart';
 import 'package:shopping/themes/light.theme.dart';
 
 void main() {
