@@ -51,7 +51,7 @@ class ProductCard extends StatelessWidget {
             height: 10,
           ),
           Container(
-            height: 60,
+            height: 30,
             child: Text(
               title,
               style: TextStyle(

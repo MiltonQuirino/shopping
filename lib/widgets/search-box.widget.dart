@@ -6,7 +6,7 @@ class SearchBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 40,
       padding: EdgeInsets.only(left: 20),
       decoration: BoxDecoration(
         color: Colors.black.withOpacity(0.1),
@@ -17,7 +17,7 @@ class SearchBox extends StatelessWidget {
       child: Row(children: [
         Icon(Icons.search),
         Container(
-          width: 300,
+          width: 200,
           padding: EdgeInsets.only(left: 10),
           child: TextFormField(
             keyboardType: TextInputType.text,

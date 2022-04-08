@@ -13,11 +13,12 @@ class ProductList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 70,
+      height: 300,
       child: ListView(
         scrollDirection: scrollDirection,
         children: <Widget>[
           ProductCard(
-            title: "Nike Dry-Fit Long Sleeve",
+            title: "Nike Dry-Fit",
             brand: "Nike",
             image: "assets/product-10.png",
             price: 150,
@@ -29,13 +30,13 @@ class ProductList extends StatelessWidget {
             price: 755,
           ),
           ProductCard(
-            title: "Leather Wristwatch",
+            title: "Leather",
             brand: "Tag Heuer",
             image: "assets/product-2.png",
             price: 450,
           ),
           ProductCard(
-            title: "Smart Bluetooth Speaker",
+            title: "Smart Bluetooth",
             brand: "Google Inc.",
             image: "assets/product-3.png",
             price: 900,

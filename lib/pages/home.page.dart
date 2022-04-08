@@ -3,6 +3,8 @@ import 'package:shopping/widgets/category/category-list.widget.dart';
 import 'package:shopping/widgets/product/product-list.widget.dart';
 import 'package:shopping/widgets/search-box.widget.dart';
 
+import '../widgets/banner/banner.widget.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({
     Key? key,
@@ -23,28 +25,32 @@ class HomePage extends StatelessWidget {
             ),
             SearchBox(),
             SizedBox(
-              height: 30,
+              height: 10,
+            ),
+            BannerHome(),
+            SizedBox(
+              height: 10,
             ),
             Text(
               "Categories",
-              style: Theme.of(context).textTheme.headline3,
+              style: Theme.of(context).textTheme.headline5,
             ),
             SizedBox(
               height: 10,
             ),
             Container(
-              height: 90,
+              height: 70,
               child: CategoryList(),
             ),
             SizedBox(
-              height: 30,
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   "Best Selling",
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context).textTheme.headline5,
                 ),
                 TextButton(
                   onPressed: () {},
@@ -56,7 +62,7 @@ class HomePage extends StatelessWidget {
               height: 10,
             ),
             Container(
-              height: 350,
+              height: 300,
               child: ProductList(
                 scrollDirection: Axis.horizontal,
               ),
