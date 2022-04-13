@@ -1,6 +1,10 @@
 # shopping
 
-A new Flutter project.
+E-commerce project.
+
+
+![Captura de tela 13-04-2022 07 16 44](https://user-images.githubusercontent.com/5189937/163159321-721422b0-d5bb-4867-82f2-843a64f9403b.png)
+
 
 ## Getting Started
 
